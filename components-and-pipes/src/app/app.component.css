@@ -1,0 +1,40 @@
+.app{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+
+
+}
+.currency{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+.time{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+.date{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+.datetime{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+}

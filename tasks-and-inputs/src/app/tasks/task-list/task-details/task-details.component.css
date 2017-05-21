@@ -1,0 +1,22 @@
+.complete{
+    border: 1px;
+    border-color: green;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+}
+.incomplete{
+    border: 1px;
+    border-color: red;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+}
+.taskdetail{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px;
+
+}

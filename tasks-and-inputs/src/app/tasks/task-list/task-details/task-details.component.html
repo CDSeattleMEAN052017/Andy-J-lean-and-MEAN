@@ -1,0 +1,29 @@
+<div class="taskdetail" *ngFor="let task of tasksFromParentViaInput; let tasksArrIndex = index">
+<h4>Task Details Component</h4>
+<h3>Task Title: <strong>{{task.title}}</strong></h3>
+
+    <p>(BTW, the index is {{tasksArrIndex}})</p>
+    <div class = "complete" *ngIf='task.status' >
+        <h5 > Completed </h5>
+        <button type="button" name="markIncomplete" (click) = "onTaskStatusUpdate(tasksArrIndex)">Click to mark Incomplete</button>
+    </div>
+    <div class = "incomplete" *ngIf='!task.status'>
+        <h5> Incomplete </h5>
+        <button type="button" name="complete" (click) = "onTaskStatusUpdate(tasksArrIndex)">Click to Complete</button>
+    </div>
+    <!-- <div [ngClass] ="task.status ? 'complete' : 'incomplete'" >
+        <h5 *ngIf='task.status'> Completed </h5>
+        <h5 *ngIf='!task.status'> Incomplete </h5>
+        <button *ngIf='!task.status' type="button" name="complete" (Click)="UpdateTaskStatus(task)">Click to Complete</button>
+        <button *ngIf='task.status' type="button" name="complete" (Click)="UpdateTaskStatus(task)">Click to mark Incomplete</button>
+
+
+
+    </div> -->
+
+
+</div>
+
+
+
+<!-- class="tasklist" *ngFor="let task of tasksFromGrandParentViaInput" -->
