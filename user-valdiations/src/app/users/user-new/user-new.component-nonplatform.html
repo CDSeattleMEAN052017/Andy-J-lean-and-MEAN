@@ -1,0 +1,22 @@
+<p>
+  user-new works!
+</p>
+
+<div class="form-style-10">
+<h1>Registration</h1>
+<form (ngSubmit)="onSubmit(userFormData.value)" #userFormData = "ngForm" class="form">
+
+    <div class="section">You know the drill... </div>
+    <div class="inner-wrap">
+        <label>First Name <input type="text" name = "first_name" ngModel/></label>
+        <label>Last Name <input type="text" name = "last_name" ngModel  /></label>
+        <label>Email Address <input type="email" name = "email" ngModel /></label>
+        <label>Password <input type="password" name = "password" ngModel/></label>
+        <label>Confirm Password <input type="password" name = "passwordconfirm" ngModel /></label>
+        <label>State <input type="text" name = "state" ngModel /></label>
+        </div>
+    <div class="button-section">
+     <input type="submit" name = "submit"/>
+    </div>
+</form>
+</div>
